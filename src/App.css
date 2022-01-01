@@ -29,7 +29,8 @@
 }
 
 .header-container{
-  background:rgba(0, 0, 0, 0.25)
+  background:rgba(0, 0, 0, 0.25);
+  padding: 5px;
 }
 
 .sub-text {
