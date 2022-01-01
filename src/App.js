@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import appLogo from './assets/gif-logo.png';
 import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
 
@@ -47,7 +48,10 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">GIF Portal</p>
+          <p className="header">
+            <img alt="GIF" className="app-logo" src={appLogo} />
+            Portal
+          </p>
           <p className="sub-text">
             View your GIF collection in the metaverse ✨
           </p>

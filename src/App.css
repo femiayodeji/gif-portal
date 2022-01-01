@@ -82,6 +82,10 @@
   padding-bottom: 45px;
 }
 
+.app-logo {
+  width: 64px;
+  height: 64px;
+}
 .twitter-logo {
   width: 35px;
   height: 35px;
