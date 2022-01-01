@@ -17,6 +17,7 @@ const App = () => {
   ]
 
   const [walletAddress, setWalletAddress] = useState(null);
+  const [inputValue, setInputvalue] = useState("");
 
   const checkIfWalletIsConnected = async () => {
     try{
@@ -44,7 +45,10 @@ const App = () => {
       setWalletAddress(response.publicKey.toString());
     }
   };
-
+   const onInputChange = (event) => {
+     const {value} = event.target;
+     setInputvalue(value);
+   }
   const renderNotConnectedContainer = () => (
     <button 
       className="cta-button connect-wallet-button"
@@ -61,7 +65,10 @@ const App = () => {
           event.preventDefault();
         }}
       >
-        <input type="text" placeholder="Enter gif link!" />
+        <input type="text" placeholder="Enter gif link!"
+          value={inputValue}
+          onChange={onInputChange}
+        />
         <button type="submit" className="cta-button submit-gif-button">Submit</button>
       </form>
       <div className="gif-grid">
