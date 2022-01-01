@@ -29,6 +29,7 @@
 }
 
 .header-container{
+  background:rgba(0, 0, 0, 0.25);
   padding: 5px;
 }
 
@@ -99,13 +100,13 @@
 
 .gif-container{
   background:rgba(0, 0, 0, 0.25);
-  margin: 4px;
-  padding: 5px;
+  margin: 5px;
+  padding: 4px;
 }
 
 .gif-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
   justify-items: center;
   margin: 0;
