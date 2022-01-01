@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background-color: #1a202c;
+  background-color: #f9c23c;
   overflow: scroll;
   text-align: center;
 }
@@ -24,11 +24,17 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   color: white;
 }
 
+.header-container{
+  background:rgba(0, 0, 0, 0.25)
+}
+
 .sub-text {
-  font-size: 25px;
+  font-size: 16px;
+  font-style: italic;
   color: white;
 }
 
@@ -83,8 +89,9 @@
 
 .footer-text {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
+  margin: 5px;
 }
 
 .gif-grid {
