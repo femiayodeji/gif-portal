@@ -1,7 +1,7 @@
 .App {
   height: 100vh;
   background-color: #f9c23c;
-  overflow: scroll;
+  overflow-y: scroll;
   text-align: center;
 }
 
@@ -34,7 +34,6 @@
 
 .sub-text {
   font-size: 16px;
-  font-style: italic;
   color: white;
 }
 
