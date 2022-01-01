@@ -45,7 +45,16 @@ const App = () => {
       setWalletAddress(response.publicKey.toString());
     }
   };
-   const onInputChange = (event) => {
+
+  const sendGif = async () => {
+    if(inputValue.length > 0){
+      console.log("GIF link:", inputValue);
+    } else {
+      console.log("Empty input. Try again");
+    }
+  }
+
+  const onInputChange = (event) => {
      const {value} = event.target;
      setInputvalue(value);
    }
@@ -63,6 +72,7 @@ const App = () => {
       <form
         onSubmit={(event) => {
           event.preventDefault();
+          sendGif();
         }}
       >
         <input type="text" placeholder="Enter gif link!"
