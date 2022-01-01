@@ -6,6 +6,12 @@ import './App.css';
 // Constants
 const TWITTER_HANDLE = 'thefemiayodeji';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+/*
+https://www.thegoandroid.com/wp-content/uploads/2018/03/tenor_1.gif
+https://www.wired.com/wp-content/uploads/2015/03/855.gif
+https://c.tenor.com/RZ-JjR2lSxEAAAAC/michael-jackson.gif
+https://c.tenor.com/fvwSYPUsrEEAAAAS/sour-gross.gif
+*/
 
 const App = () => {
   
@@ -17,7 +23,7 @@ const App = () => {
   ]
 
   const [walletAddress, setWalletAddress] = useState(null);
-  const [inputValue, setInputvalue] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const [gifList, setGifList] = useState([]);
 
   const checkIfWalletIsConnected = async () => {
@@ -59,7 +65,7 @@ const App = () => {
 
   const onInputChange = (event) => {
      const {value} = event.target;
-     setInputvalue(value);
+     setInputValue(value);
    }
   const renderNotConnectedContainer = () => (
     <button 
