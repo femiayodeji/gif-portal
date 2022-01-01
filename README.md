@@ -1,8 +1,7 @@
 # GIF Portal
 
+**A Web3 app on Solana with React and Rust for creating GIF collection authorized using wallet**
 
-### **Welcome 👋**
-To get started with this course, clone this repo and follow these commands:
-
+To run this project follow these commands:
 1. Run `npm install` at the root of your directory
 2. Run `npm run start` to start the project
