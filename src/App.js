@@ -2,6 +2,17 @@ import React, {useEffect, useState} from 'react';
 import appLogo from './assets/gif-logo.png';
 import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
+import {Connection, PublicKey, clusterApiUrl} from '@solana/web3.js';
+import {Program, Provider, web3} from '@project-serum/anchor';
+import idl from './idl.json';
+
+const {SystemProgram, Keypair} = web3;
+let baseAccount = Keypair.generate();
+const programID = new PublicKey(idl.metadata.address);
+const network = clusterApiUrl('devnet');
+const opts = {
+  preflightCommitment: "processed"
+}
 
 // Constants
 const TWITTER_HANDLE = 'thefemiayodeji';
@@ -66,6 +77,14 @@ const App = () => {
   const onInputChange = (event) => {
      const {value} = event.target;
      setInputValue(value);
+   }
+
+   const getProvider = () => {
+     const connection = new Connection(network, opts.preflightCommitment);
+     const provider = new Provider(
+       connection, window.solana, opts.preflightCommitment,
+     );
+     return provider;
    }
   const renderNotConnectedContainer = () => (
     <button 
