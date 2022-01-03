@@ -130,9 +130,12 @@
 .gif-item p.gif-user {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  margin-top: -25px;
+  margin-top: -36px;
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
+  vertical-align:middle;
+  min-height: 32px;
+  font-size: 12px;
 }
 
 .connected-container input[type='text'] {
