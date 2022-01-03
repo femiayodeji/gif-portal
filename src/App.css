@@ -127,6 +127,7 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
 .gif-item p.gif-user {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -136,6 +137,19 @@
   vertical-align:middle;
   min-height: 32px;
   font-size: 12px;
+}
+
+.gif-item p.gif-vote {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-bottom: -36px;
+  padding: 2px;
+  border-radius: 10px 10px 0px 0px;
+  vertical-align:middle;
+  text-align: center;
+  min-height: 32px;
+  font-size: 16px;
+  z-index: 1000;
 }
 
 .connected-container input[type='text'] {
